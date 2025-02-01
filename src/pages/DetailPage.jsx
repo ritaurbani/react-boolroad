@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import viaggi from '../data/viaggi';
 import partecipanti from '../data/partecipanti';
 import CardPartecipanti from '../components/CardPartecipanti';
+import AppModal from '../components/AppModal';
 
 const DetailPage = () => {
 
@@ -17,41 +18,47 @@ const DetailPage = () => {
 
         if (selectedTrip) {
             setFilteredParticipants(
-                partecipanti.filter((persona) => persona.id_trip === selectedTrip.id);
+                partecipanti.filter((persona) => persona.id_trip === selectedTrip.id)
             )
         }
     }, [id])
 
+
     return (
         <>
-            <Link to="/">← Home</Link>
-            <h2 className='text-center mt-4'>Destinazione</h2>
-            <h4>Partecipanti:</h4>
-    
-            {/* SEARCH BAR */}
-            <div>
-                <input
-                    type="text"
-                    placeholder="Cerca per nome o cognome..."
-                    value={search}
-                    onChange={(event) => setSearch(event.target.value)}
-                />
-            </div>
+            <div className="container">
+                <h2 className='text-center mt-4'>{trip && trip.destinazione}</h2>
+                <h4>Partecipanti:</h4>
 
-            {/* LISTA CONTATTI */}
-            <div className='container'>
-                <div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3' >
-                    {filteredParticipants.filter((persona) => {
-                        if (search === "") {
-                            return persona
-                        } else if (persona.nome.toLowerCase().includes(search.toLowerCase()) || persona.cognome.toLowerCase().includes(search.toLowerCase())) {
-                            return persona
-                        }
-                    }).map((curPartecipante) => (
-                        <div key={curPartecipante.id} className="col">
-                            <CardPartecipanti partecipante={curPartecipante} />
-                        </div>
-                    ))}
+                {/* SEARCH BAR */}
+                <div>
+                    <input
+                        type="text"
+                        placeholder="Cerca per nome o cognome..."
+                        value={search}
+                        onChange={(event) => setSearch(event.target.value)}
+
+                    />
+                </div>
+
+                {/* LISTA CONTATTI */}
+                <div className='container mt-5'>
+                    <div className='row row-cols-1' >
+                        {filteredParticipants.filter((persona) => {
+                            if (search === "") {
+                                return persona
+                            } else if (persona.nome.toLowerCase().includes(search.toLowerCase()) || persona.cognome.toLowerCase().includes(search.toLowerCase())) {
+                                return persona
+                            }
+                        }).map((curPartecipante) => (
+                            <div key={curPartecipante.id} className="col">
+                                <CardPartecipanti partecipante={curPartecipante} />
+                            </div>
+                        ))}
+                    </div>
+                    {/* MODALE */}
+                    <AppModal />
+                    {/* MODALE */}
                 </div>
             </div>
         </>
@@ -59,26 +66,3 @@ const DetailPage = () => {
 }
 
 export default DetailPage;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
