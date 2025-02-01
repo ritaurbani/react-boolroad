@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const FormPartecipanti = () => {
+const FormPartecipanti = ({ array, setArray }) => {
     const initialFormData = {
         nome: "",
         cognome: "",
@@ -10,17 +10,26 @@ const FormPartecipanti = () => {
     }
 
     const [formData, setFormData] = useState(initialFormData)
+    
     const handleChange = (event) => {
         const key = event.target.name;
         const value = event.target.value;
-        const newData = { ...formData, [key]: value }
+        const newData = {...formData, [key]: value }
 
         setFormData(newData)
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        const newObj = {...formData, id: Date.now()}
+        const newList = [...array, newObj]
+        setArray(newList)
+        setFormData(initialFormData)
+    }
+
     return (
         <>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-6 mb-3">
                         <label htmlFor="nome" className="form-label">Nome</label>
@@ -72,7 +81,9 @@ const FormPartecipanti = () => {
                             className="form-control"
                             onChange={handleChange} />
                     </div>
-                    <button type="button" className="btn btn-primary">Salva</button>
+                    <div className="text-end me-3 mt-3">
+                        <button type="Submit" className="btn btn-primary" data-bs-dismiss="modal">Salva</button>
+                    </div>
                 </div >
             </form >
         </>

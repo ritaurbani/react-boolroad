@@ -12,6 +12,7 @@ const DetailPage = () => {
     const [trip, setTrip] = useState(null);
     const [filteredParticipants, setFilteredParticipants] = useState([]);
     const [search, setSearch] = useState("");
+    const [listPartecipanti, setListPartecipanti] = useState(partecipanti)
 
     useEffect(() => {
         const selectedTrip = viaggi.find((curViaggio) => curViaggio.id === parseInt(id));
@@ -19,23 +20,24 @@ const DetailPage = () => {
 
         if (selectedTrip) {
             setFilteredParticipants(
-                partecipanti.filter((persona) => persona.id_trip === selectedTrip.id)
+                listPartecipanti.filter((persona) => persona.id_trip === selectedTrip.id)
             )
         }
-    }, [id])
+    }, [id, listPartecipanti])
 
 
     return (
         <>
             <div className="container">
-                <h2 className='text-center mt-4'>{trip && trip.destinazione}</h2>
-                <h4>Partecipanti:</h4>
+                <h2 className='text-center mt-4 mb-3'>{trip && trip.destinazione}</h2>
+                <h4 className='text-center mb-4'>Partecipanti:</h4>
 
                 {/* SEARCH BAR */}
                 <div>
                     <input
+                        className='input-group-text form-control'
                         type="text"
-                        placeholder="Cerca per nome o cognome..."
+                        placeholder="Cerca per nome o cognome"
                         value={search}
                         onChange={(event) => setSearch(event.target.value)}
 
@@ -58,7 +60,7 @@ const DetailPage = () => {
                         ))}
                     </div>
                     {/* MODALE */}
-                    <AppModal testo="partecipante" form={<FormPartecipanti />}/>
+                    <AppModal testo="partecipante" form={<FormPartecipanti array={listPartecipanti} setArray={setListPartecipanti} />} />
                     {/* MODALE */}
                 </div>
             </div>

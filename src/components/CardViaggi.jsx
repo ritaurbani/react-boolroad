@@ -8,7 +8,7 @@ const CardViaggi = ({ viaggio }) => {
         <div className="card-body">
           <h5 className="card-title">{viaggio.destinazione}</h5>
           <p className="card-text">{`${viaggio.data_inizio} - ${viaggio.data_fine}`}</p>
-          <Link to={`/viaggi/${viaggio.id}/detail`} class="btn btn-primary">Dettagli</Link>
+          <Link to={`/viaggi/${viaggio.id}/detail`} class="btn btn-primary"><i class="fa-solid fa-pen"></i> Dettagli</Link>
         </div>
     </div>
   )

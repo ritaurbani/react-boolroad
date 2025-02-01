@@ -11,11 +11,11 @@ const CardPartecipanti = ({ partecipante }) => {
         </h2>
         <div id={`collapse${partecipante.id}`} className="accordion-collapse collapse" data-bs-parent="#accordionParticipant">
           <div className="accordion-body">
-            <p> <i className="fa-solid fa-envelope me-1"></i>Email: 
+          <p> <i className="fa-solid fa-envelope me-1"></i><b>Email: </b>
               <a href=""> {partecipante.email}</a>
             </p>
-            <p><i class="fa-solid fa-phone me-1"></i>{`Phone: ${partecipante.telefono}`}</p>
-            <p><i class="fa-solid fa-database me-1"></i>{`CF: ${partecipante.codice_fiscale}`}</p>
+            <p><i className="fa-solid fa-phone me-1"></i><b>Phone:</b> {`${partecipante.telefono}`}</p>
+            <p><i className="fa-solid fa-database me-1"></i><b>CF: </b>{`${partecipante.codice_fiscale}`}</p>
           </div>
         </div>
       </div>

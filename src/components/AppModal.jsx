@@ -1,10 +1,10 @@
 const AppModal = ( {testo, form}) => {
     return (
         <>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-               {` Aggiungi ${testo}`}
+            <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-globe"></i> {` Aggiungi ${testo}`}
             </button>
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
