@@ -1,10 +1,8 @@
-import FormPartecipanti from "./FormPartecipanti"
-
-const AppModal = () => {
+const AppModal = ( {testo, form}) => {
     return (
         <>
             <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Aggiungi partecipante
+               {` Aggiungi ${testo}`}
             </button>
             <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
@@ -14,11 +12,7 @@ const AppModal = () => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                           <FormPartecipanti />
-                        </div>
-                        <div className="modal-footer">
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-                            <button type="button" className="btn btn-primary">Salva</button>
+                           {form}
                         </div>
                     </div>
                 </div>

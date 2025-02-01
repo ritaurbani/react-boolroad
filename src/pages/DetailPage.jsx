@@ -4,6 +4,7 @@ import viaggi from '../data/viaggi';
 import partecipanti from '../data/partecipanti';
 import CardPartecipanti from '../components/CardPartecipanti';
 import AppModal from '../components/AppModal';
+import FormPartecipanti from '../components/FormPartecipanti';
 
 const DetailPage = () => {
 
@@ -57,7 +58,7 @@ const DetailPage = () => {
                         ))}
                     </div>
                     {/* MODALE */}
-                    <AppModal />
+                    <AppModal testo="partecipante" form={<FormPartecipanti />}/>
                     {/* MODALE */}
                 </div>
             </div>

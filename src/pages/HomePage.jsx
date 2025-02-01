@@ -1,6 +1,8 @@
 import React from 'react'
 import viaggi from "../data/viaggi"
 import CardViaggi from '../components/CardViaggi'
+import AppModal from '../components/AppModal'
+import FormViaggi from '../components/FormViaggi'
 
 const HomePage = () => {
   return (
@@ -13,6 +15,7 @@ const HomePage = () => {
           </div>
         ))}
       </div>
+      <AppModal testo="viaggio" form={<FormViaggi />}/>
     </div>
   )
 }
