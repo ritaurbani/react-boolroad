@@ -14,9 +14,9 @@ const AppHeader = () => {
             height="24" 
             className="d-inline-block align-text-top ms-5 me-3"
           />
-          BooRoad!<i class="fa-solid fa-plane ms-2"></i>
+          BooRoad!<i className="fa-solid fa-plane ms-2 green-2"></i>
         </a>
-        <Link to="/" className='nav-link text-white me-5'><i class="fa-solid fa-house"></i></Link>
+        <Link to="/" className='nav-link text-white me-5'><i className="fa-solid fa-house green-2"></i></Link>
       </div>
     </nav>
   );

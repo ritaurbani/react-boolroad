@@ -1,9 +1,9 @@
-const AppModal = ( {testo, form}) => {
+const AppModal = ({testo, form}) => {
     return (
         <>
-            <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div className="text-center"><button type="button" className="btn blue mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fa-solid fa-globe"></i> {` Aggiungi ${testo}`}
-            </button>
+            </button></div>
             <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">

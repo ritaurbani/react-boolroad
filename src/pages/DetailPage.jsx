@@ -15,14 +15,18 @@ const DetailPage = () => {
     const [listPartecipanti, setListPartecipanti] = useState(partecipanti)
 
     useEffect(() => {
+        console.log(listPartecipanti)
         const selectedTrip = viaggi.find((curViaggio) => curViaggio.id === parseInt(id));
         setTrip(selectedTrip);
-
+        console.log(selectedTrip)
         if (selectedTrip) {
+            console.log(selectedTrip)
+            //filtro dei partecipanti in base al viaggio selezionato
             setFilteredParticipants(
                 listPartecipanti.filter((persona) => persona.id_trip === selectedTrip.id)
             )
         }
+        console.log(listPartecipanti)
     }, [id, listPartecipanti])
 
 
@@ -60,7 +64,7 @@ const DetailPage = () => {
                         ))}
                     </div>
                     {/* MODALE */}
-                    <AppModal testo="partecipante" form={<FormPartecipanti array={listPartecipanti} setArray={setListPartecipanti} />} />
+                    <AppModal testo="partecipante" form={<FormPartecipanti array={listPartecipanti} setArray={setListPartecipanti} tripId={id} />} />
                     {/* MODALE */}
                 </div>
             </div>

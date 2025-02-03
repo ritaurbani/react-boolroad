@@ -4,7 +4,7 @@ const partecipanti = [
         "nome": "Mario",
         "cognome": "Rossi",
         "email": "mario.rossi@email.com",
-        "telefono": "+39 320 1234567",
+        "telefono": "+393201234567",
         "codice_fiscale": "RSSMRA80A01H501Z",
         "id_trip": 1
     },
@@ -13,7 +13,7 @@ const partecipanti = [
         "nome": "Luca",
         "cognome": "Bianchi",
         "email": "luca.bianchi@email.com",
-        "telefono": "+39 333 9876543",
+        "telefono": "+393339876543",
         "codice_fiscale": "BNCLCU85B02F205X",
         "id_trip": 1
     },
@@ -22,7 +22,7 @@ const partecipanti = [
         "nome": "Giulia",
         "cognome": "Verdi",
         "email": "giulia.verdi@email.com",
-        "telefono": "+39 345 6789012",
+        "telefono": "+393456789012",
         "codice_fiscale": "VRDGLL90C03D612Y",
         "id_trip": 1
     },
@@ -31,7 +31,7 @@ const partecipanti = [
         "nome": "Elena",
         "cognome": "Ferrari",
         "email": "elena.ferrari@email.com",
-        "telefono": "+39 328 4567890",
+        "telefono": "+393284567890",
         "codice_fiscale": "FRRLNE95D04C351W",
         "id_trip": 1
     },
@@ -40,7 +40,7 @@ const partecipanti = [
         "nome": "Antonio",
         "cognome": "Esposito",
         "email": "antonio.esposito@email.com",
-        "telefono": "+39 339 1122334",
+        "telefono": "+393391122334",
         "codice_fiscale": "SPSNTN88E05A662V",
         "id_trip": 1
     },
@@ -50,7 +50,7 @@ const partecipanti = [
         "nome": "Roberto",
         "cognome": "D'Angelo",
         "email": "roberto.dangelo@email.com",
-        "telefono": "+39 320 2345678",
+        "telefono": "+393202345678",
         "codice_fiscale": "DNGRTB75A01D612Z",
         "id_trip": 2
     },
@@ -59,7 +59,7 @@ const partecipanti = [
         "nome": "Maria Chiara",
         "cognome": "",
         "email": "maria.chiara@email.com",
-        "telefono": "+39 331 5678901",
+        "telefono": "+393315678901",
         "codice_fiscale": "CGRMRC91E02F205X",
         "id_trip": 2
     },
@@ -68,7 +68,7 @@ const partecipanti = [
         "nome": "Claudia",
         "cognome": "Moretti",
         "email": "claudia.moretti@email.com",
-        "telefono": "+39 329 1234567",
+        "telefono": "+393291234567",
         "codice_fiscale": "MRTCDL92D04D612Y",
         "id_trip": 2
     },
@@ -77,7 +77,7 @@ const partecipanti = [
         "nome": "Giovanni",
         "cognome": "Ricci",
         "email": "giovanni.ricci@email.com",
-        "telefono": "+39 340 9876543",
+        "telefono": "+393409876543",
         "codice_fiscale": "RCCGVN80B01C351W",
         "id_trip": 2
     },
@@ -86,7 +86,7 @@ const partecipanti = [
         "nome": "Francesco",
         "cognome": "Gatti",
         "email": "francesco.gatti@email.com",
-        "telefono": "+39 320 4567890",
+        "telefono": "+393204567890",
         "codice_fiscale": "GTTFNC72A02D612Y",
         "id_trip": 2
     },
@@ -96,7 +96,7 @@ const partecipanti = [
         "nome": "Sara",
         "cognome": "Luciani",
         "email": "sara.luciani@email.com",
-        "telefono": "+39 331 2345678",
+        "telefono": "+393312345678",
         "codice_fiscale": "LCNSRA85B04C351W",
         "id_trip": 3
     },
@@ -105,7 +105,7 @@ const partecipanti = [
         "nome": "Stefano",
         "cognome": "Barbieri",
         "email": "stefano.barbieri@email.com",
-        "telefono": "+39 335 5678901",
+        "telefono": "+393355678901",
         "codice_fiscale": "BRBFSN95T01F205X",
         "id_trip": 3
     },
@@ -114,7 +114,7 @@ const partecipanti = [
         "nome": "Elena",
         "cognome": "Corti",
         "email": "elena.corti@email.com",
-        "telefono": "+39 333 6789012",
+        "telefono": "+393336789012",
         "codice_fiscale": "CRTENA86D04F612Z",
         "id_trip": 3
     },
@@ -123,7 +123,7 @@ const partecipanti = [
         "nome": "Paolo",
         "cognome": "Rossi",
         "email": "paolo.rossi@email.com",
-        "telefono": "+39 340 1234567",
+        "telefono": "+393401234567",
         "codice_fiscale": "RSSPLA91B02D205X",
         "id_trip": 3
     },
@@ -132,7 +132,7 @@ const partecipanti = [
         "nome": "Martina",
         "cognome": "Sassi",
         "email": "martina.sassi@email.com",
-        "telefono": "+39 329 3456789",
+        "telefono": "+393293456789",
         "codice_fiscale": "SSMRTN85C04D351W",
         "id_trip": 3
     },
@@ -142,7 +142,7 @@ const partecipanti = [
         "nome": "Tommaso",
         "cognome": "Pellini",
         "email": "tommaso.pellini@email.com",
-        "telefono": "+39 320 2345678",
+        "telefono": "+393202345678",
         "codice_fiscale": "PLLTMS71A01D612Z",
         "id_trip": 4
     },
@@ -151,7 +151,7 @@ const partecipanti = [
         "nome": "Valentina",
         "cognome": "Moro",
         "email": "valentina.moro@email.com",
-        "telefono": "+39 338 6789012",
+        "telefono": "+393386789012",
         "codice_fiscale": "MRVLNT88C02F205X",
         "id_trip": 4
     },
@@ -160,7 +160,7 @@ const partecipanti = [
         "nome": "Riccardo",
         "cognome": "Puglisi",
         "email": "riccardo.puglisi@email.com",
-        "telefono": "+39 331 2345678",
+        "telefono": "+393312345678",
         "codice_fiscale": "PGLRCD85T01C351W",
         "id_trip": 4
     },
@@ -169,7 +169,7 @@ const partecipanti = [
         "nome": "Claudia",
         "cognome": "Fabbri",
         "email": "claudia.fabbri@email.com",
-        "telefono": "+39 320 3456789",
+        "telefono": "+393203456789",
         "codice_fiscale": "FBRCLD85A03D612Y",
         "id_trip": 4
     },
@@ -178,7 +178,7 @@ const partecipanti = [
         "nome": "Giorgio",
         "cognome": "Romano",
         "email": "giorgio.romano@email.com",
-        "telefono": "+39 340 2345678",
+        "telefono": "+393402345678",
         "codice_fiscale": "RMNGHR84T01D612Z",
         "id_trip": 4
     },
@@ -188,7 +188,7 @@ const partecipanti = [
         "nome": "Dario",
         "cognome": "Alfieri",
         "email": "dario.alfieri@email.com",
-        "telefono": "+39 339 5678901",
+        "telefono": "+393395678901",
         "codice_fiscale": "LFRDRI82C01D612Z",
         "id_trip": 5
     },
@@ -197,7 +197,7 @@ const partecipanti = [
         "nome": "Caterina",
         "cognome": "Fontana",
         "email": "caterina.fontana@email.com",
-        "telefono": "+39 340 2345678",
+        "telefono": "+393402345678",
         "codice_fiscale": "FNTCTR85T01F205X",
         "id_trip": 5
     },
