@@ -5,8 +5,8 @@ const CardPartecipanti = ({ partecipante }) => {
     <div className="accordion mb-3" id="accordionParticipant">
       <div className="accordion-item">
         <h2 className="accordion-header">
-          <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${partecipante.id}`} aria-expanded="false" aria-controls={`collapse${partecipante.id}`}>
-          <i class="fa-solid fa-user me-2"></i>{`${partecipante.nome} ${partecipante.cognome}`}
+          <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={`#collapse${partecipante.id}`} aria-expanded="false" aria-controls={`collapse${partecipante.id}`}>
+          <i className="fa-solid fa-user me-2"></i>{`${partecipante.nome} ${partecipante.cognome}`}
           </button>
         </h2>
         <div id={`collapse${partecipante.id}`} className="accordion-collapse collapse" data-bs-parent="#accordionParticipant">

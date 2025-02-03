@@ -13,7 +13,7 @@ const CardViaggi = ({ viaggio }) => {
       <div className="card-body">
         <h5 className="card-title">{viaggio.destinazione}</h5>
         <p className="card-text">{`${viaggio.data_inizio} - ${viaggio.data_fine}`}</p>
-        <Link to={`/viaggi/${viaggio.id}/detail`} className="btn green"><i class="fa-solid fa-eye"></i> Dettagli</Link>
+        <Link to={`/viaggi/${viaggio.id}/detail`} className="btn green"><i className="fa-solid fa-eye"></i> Dettagli</Link>
       </div>
     </div>
   )

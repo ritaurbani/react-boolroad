@@ -35,4 +35,5 @@ const viaggi = [
         "img": "/img/rio.jpeg"
     }
 ];
+
 export default viaggi

@@ -1,19 +1,31 @@
-.green{
-    background-color: rgb(110 214 99);
-    color: white;
+.green {
+    background-color: #6ed663;
+    color: #ffffff;
 }
-.green:hover{
+
+.green:hover {
     background-color: #031732;
-    color: white;
+    color: #ffffff;
 }
-.blue{
-    background-color:#031732 ;
-    color: white;
+
+.blue {
+    background-color: #031732;
+    color: #ffffff;
 }
-.blue:hover{
-    background-color:rgb(110 214 99) ;
-    color: white;
+
+.blue:hover {
+    background-color: #6ed663;
+    color: #ffffff;
 }
-.green-2{
-    color:rgb(110 214 99);
+
+.green-2 {
+    color: #6ed663;
+}
+
+.grey {
+    background-color: #d3d3d3;
+}
+
+.bg-blu {
+    color: #031732;
 }
