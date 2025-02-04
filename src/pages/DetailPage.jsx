@@ -32,7 +32,7 @@ const DetailPage = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="container mt-5 pt-5">
                 <h2 className='text-center mt-4 mb-3'>{trip && trip.destinazione}</h2>
                 <h4 className='text-center mb-4'>Partecipanti:</h4>
 

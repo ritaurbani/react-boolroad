@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AppHeader = () => {
   return (
-    <nav className="navbar grey">
+    <nav className="navbar grey fixed-top">
       <div className="container-fluid">
         <a className="navbar-brand text-white" href="/">
           <img 
